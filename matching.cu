@@ -1200,7 +1200,7 @@ double MatchSiftData(SiftData &data1, SiftData &data2)
 
   double gpuTime = timer.read();
 #ifndef VERBOSE
-  printf("MatchSiftData time =          %.2f ms\n", gpuTime);
+  // printf("MatchSiftData time =          %.2f ms\n", gpuTime);
 #endif
   return gpuTime;
 }		 

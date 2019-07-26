@@ -3,8 +3,10 @@
 #include <opencv2/core/core.hpp>
 #include "cudaSift.h"
 
-int ImproveHomography(SiftData &data, float *homography, int numLoops, float minScore, float maxAmbiguity, float thresh)
-{
+int ImproveHomography(SiftData &data, float *homography, int numLoops, float minScore, 
+		      float maxAmbiguity, float thresh, std::vector<int>& inlier_indexs){
+  
+  inlier_indexs.clear();
 #ifdef MANAGEDMEM
   SiftPoint *mpts = data.m_data;
 #else
@@ -17,9 +19,10 @@ int ImproveHomography(SiftData &data, float *homography, int numLoops, float min
   cv::Mat M(8, 8, CV_64FC1);
   cv::Mat A(8, 1, CV_64FC1), X(8, 1, CV_64FC1);
   double Y[8];
-  for (int i=0;i<8;i++) 
+  for (int i = 0; i < 8; i++) {
     A.at<double>(i, 0) = homography[i] / homography[8];
-  for (int loop=0;loop<numLoops;loop++) {
+  }
+  for (int loop = 0; loop < numLoops; loop++) {
     M = cv::Scalar(0.0);
     X = cv::Scalar(0.0);
     for (int i=0;i<numPts;i++) {
@@ -55,14 +58,16 @@ int ImproveHomography(SiftData &data, float *homography, int numLoops, float min
     cv::solve(M, X, A, cv::DECOMP_CHOLESKY);
   }
   int numfit = 0;
-  for (int i=0;i<numPts;i++) {
+  for (int i = 0; i < numPts; i++) {
     SiftPoint &pt = mpts[i];
     float den = A.at<double>(6)*pt.xpos + A.at<double>(7)*pt.ypos + 1.0;
     float dx = (A.at<double>(0)*pt.xpos + A.at<double>(1)*pt.ypos + A.at<double>(2)) / den - pt.match_xpos;
     float dy = (A.at<double>(3)*pt.xpos + A.at<double>(4)*pt.ypos + A.at<double>(5)) / den - pt.match_ypos;
     float err = dx*dx + dy*dy;
-    if (err<limit) 
+    if (err<limit) {
       numfit++;
+      inlier_indexs.push_back(i);
+    }
     pt.match_error = sqrt(err);
   }
   for (int i=0;i<8;i++) 

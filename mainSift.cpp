@@ -25,16 +25,16 @@
 #include "tic_toc.h"
 
 using std::pair;
-
 using namespace cv;
 
-int ImproveHomography(SiftData &data, float *homography, int numLoops, float minScore, float maxAmbiguity, float thresh);
+int ImproveHomography(SiftData &data, float *homography, int numLoops, float minScore, 
+		      float maxAmbiguity, float thresh,  std::vector<int>& inlier_indexs);
 void PrintMatchData(SiftData &siftData1, SiftData &siftData2, CudaImage &img);
 void MatchAll(SiftData &siftData1, SiftData &siftData2, float *homography);
 
 void visFeatureTracking(cv::Mat pre_img, cv::Mat cur_img, std::vector<pair<cv::Point2f, cv::Point2f> >& matches);
-
-void getCorrespondence(SiftData &siftData1, SiftData &siftData2, std::vector<std::pair<cv::Point2f, cv::Point2f> > &correspondence);
+void getCorrespondence(SiftData &siftData1, SiftData &siftData2, std::vector<int> inlier_indexs,
+		       std::vector<std::pair<cv::Point2f, cv::Point2f> > &correspondence);
 double ScaleUp(CudaImage &res, CudaImage &src);
 
 
@@ -45,29 +45,28 @@ int main(int argc, char **argv) {
 
   int devNum = 0, imgSet = 0;
   
+  TicToc t_start;
   // read two image
   cv::Mat limg, rimg;
   std::string str_img1 = argv[1];
   std::string str_img2 = argv[2];
   cv::imread(str_img1, 0).convertTo(limg, CV_32FC1);
   cv::imread(str_img2, 0).convertTo(rimg, CV_32FC1);
+  std::cout << "Image initial cost = " << t_start.toc()  << "ms" << std::endl;
   
+  TicToc t_start_11;
   cv::Mat img_pre = cv::imread(str_img1);
   cv::Mat img_cur = cv::imread(str_img2);
+  std::cout << "Image cv::imread cost = " << t_start_11.toc()  << "ms" << std::endl;
   
-  //cv::flip(limg, rimg, -1);
   unsigned int w = limg.cols;
   unsigned int h = limg.rows;
-  std::cout << "Image size = (" << w << "," << h << ")" << std::endl;
-  
-  // Initial Cuda images and download images to device
-  std::cout << "Initializing data..." << std::endl;
-  
-   
-//   InitCuda(devNum); 
-//   CudaImage img1, img2;
-//   img1.Allocate(w, h, iAlignUp(w, 128), false, NULL, (float*)limg.data);
-//   img2.Allocate(w, h, iAlignUp(w, 128), false, NULL, (float*)rimg.data);
+
+  // InitCuda(devNum); 
+
+  //   CudaImage img1, img2;
+  //   img1.Allocate(w, h, iAlignUp(w, 128), false, NULL, (float*)limg.data);
+  //   img2.Allocate(w, h, iAlignUp(w, 128), false, NULL, (float*)rimg.data);
   
   TicToc t_start1;
   CudaImage img1(w, h,  iAlignUp(w, 128), false, NULL); 
@@ -86,38 +85,36 @@ int main(int argc, char **argv) {
   float thresh = (imgSet ? 4.5f : 3.0f);
   InitSiftData(siftData1, 32768, true, true); 
   InitSiftData(siftData2, 32768, true, true);
-  
-  // A bit of benchmarking 
-  //for (int thresh1=1.00f;thresh1<=4.01f;thresh1+=0.50f) {
   float *memoryTmp = AllocSiftTempMemory(w, h, 5, false);
-//     for (int i = 0;i < 1000; i++) {
-//       ExtractSift(siftData1, img1, 5, initBlur, thresh, 0.0f, false, memoryTmp);
-//       ExtractSift(siftData2, img2, 5, initBlur, thresh, 0.0f, false, memoryTmp);
-//     }
   std::cout << "Time2 cost = " << t_start2.toc()  << "ms" << std::endl;
   
-  TicToc t_start;
+  TicToc t_start3;
   ExtractSift(siftData1, img1, 5, initBlur, thresh, 0.0f, false, memoryTmp);
   ExtractSift(siftData2, img2, 5, initBlur, thresh, 0.0f, false, memoryTmp);
   FreeSiftTempMemory(memoryTmp);
+  std::cout << "Time3 cost = " << t_start3.toc()  << "ms" << std::endl;
   // Match Sift features and find a homography
+  
+  TicToc t_start4;
   MatchSiftData(siftData1, siftData2);
-  std::cout << "Time3 cost = " << t_start.toc()  << "ms" << std::endl;
   
   float homography[9];
   int numMatches;
+  std::vector<int> inlier_indexs;
   FindHomography(siftData1, homography, &numMatches, 10000, 0.00f, 0.80f, 5.0);
-  int numFit = ImproveHomography(siftData1, homography, 5, 0.00f, 0.80f, 3.0);
+  int numFit = ImproveHomography(siftData1, homography, 5, 0.00f, 0.80f, 3.0, inlier_indexs);
+  std::cout << "Time4 cost = " << t_start4.toc()  << "ms" << std::endl;
   
   std::cout << "Number of original features: " <<  siftData1.numPts << " " << siftData2.numPts << std::endl;
-  std::cout << "Number of matching features: " << numFit << " " << numMatches << " " << 100.0f*numFit/std::min(siftData1.numPts, siftData2.numPts) << "% " << initBlur << " " << thresh << std::endl;
+  std::cout << "Number of matching features: " << numFit << " " << std::endl;
+  std::cout << "matching rate = " << 100.0f*numFit/std::min(siftData1.numPts, siftData2.numPts) << "% " << std::endl;
   
   // Print out and store summary data
   // PrintMatchData(siftData1, siftData2, img1);
   // cv::imwrite("data/limg_pts.pgm", limg);
   
   std::vector<pair<cv::Point2f, cv::Point2f> > correspondence;
-  getCorrespondence(siftData1, siftData2, correspondence);
+  getCorrespondence(siftData1, siftData2, inlier_indexs, correspondence);
   visFeatureTracking(img_pre, img_cur, correspondence);
   
   //MatchAll(siftData1, siftData2, homography);
@@ -170,7 +167,8 @@ void visFeatureTracking(cv::Mat pre_img, cv::Mat cur_img, std::vector<pair<cv::P
   
 }
 
-void getCorrespondence(SiftData &siftData1, SiftData &siftData2, std::vector<pair<cv::Point2f, cv::Point2f> > &correspondence){
+void getCorrespondence(SiftData &siftData1, SiftData &siftData2, std::vector<int> inlier_indexs,
+		       std::vector<pair<cv::Point2f, cv::Point2f> > &correspondence){
   
   correspondence.clear();
   int numPts = siftData1.numPts;
@@ -184,7 +182,8 @@ void getCorrespondence(SiftData &siftData1, SiftData &siftData2, std::vector<pai
   // find max 
 //   for()
   
-  for (int j = 0; j < numPts; j++) {
+  for (int i = 0; i < inlier_indexs.size(); i++) {
+    int j = inlier_indexs[i];
     int k = sift1[j].match;
     cv::Point2f pre_pt(sift1[j].xpos, sift1[j].ypos);
     cv::Point2f cur_pt(sift2[k].xpos, sift2[k].ypos);
