@@ -62,12 +62,7 @@ int main(int argc, char **argv) {
   unsigned int w = limg.cols;
   unsigned int h = limg.rows;
 
-  // InitCuda(devNum); 
-
-  //   CudaImage img1, img2;
-  //   img1.Allocate(w, h, iAlignUp(w, 128), false, NULL, (float*)limg.data);
-  //   img2.Allocate(w, h, iAlignUp(w, 128), false, NULL, (float*)rimg.data);
-  
+  InitCuda(devNum); 
   TicToc t_start1;
   CudaImage img1(w, h,  iAlignUp(w, 128), false, NULL); 
   CudaImage img2(w, h,  iAlignUp(w, 128), false, NULL); 
@@ -109,15 +104,12 @@ int main(int argc, char **argv) {
   std::cout << "Number of matching features: " << numFit << " " << std::endl;
   std::cout << "matching rate = " << 100.0f*numFit/std::min(siftData1.numPts, siftData2.numPts) << "% " << std::endl;
   
-  // Print out and store summary data
   // PrintMatchData(siftData1, siftData2, img1);
-  // cv::imwrite("data/limg_pts.pgm", limg);
-  
   std::vector<pair<cv::Point2f, cv::Point2f> > correspondence;
   getCorrespondence(siftData1, siftData2, inlier_indexs, correspondence);
   visFeatureTracking(img_pre, img_cur, correspondence);
   
-  //MatchAll(siftData1, siftData2, homography);
+  MatchAll(siftData1, siftData2, homography);
   
   // Free Sift data from device
   FreeSiftData(siftData1);
@@ -206,12 +198,7 @@ void MatchAll(SiftData &siftData1, SiftData &siftData2, float *homography){
   int numPts1 = siftData1.numPts;
   int numPts2 = siftData2.numPts;
   int numFound = 0;
-#if 1
-  homography[0] = homography[4] = -1.0f;
-  homography[1] = homography[3] = homography[6] = homography[7] = 0.0f;
-  homography[2] = 1279.0f;
-  homography[5] = 959.0f;
-#endif
+
   for (int i = 0; i < numPts1; i++) {
     float *data1 = sift1[i].data;
     std::cout << i << ":" << sift1[i].scale << ":" << (int)sift1[i].orientation << " " << sift1[i].xpos << " " << sift1[i].ypos << std::endl;
