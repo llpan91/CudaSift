@@ -62,8 +62,11 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: ../cudaImage.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: ../cudautils.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/_G_config.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/alloca.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/asm-generic/errno-base.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/asm-generic/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/assert.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/backward/binders.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/alloc_traits.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/allocator.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/basic_ios.h
@@ -75,7 +78,10 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bi
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/cxxabi_forced.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/exception_defines.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/exception_ptr.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/functexcept.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/functional_hash.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/hash_bytes.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/ios_base.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/istream.tcc
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/locale_classes.h
@@ -85,6 +91,7 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bi
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/localefwd.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/memoryfwd.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/move.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/nested_exception.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/ostream.tcc
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/ostream_insert.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/postypes.h
@@ -101,8 +108,10 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bi
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/streambuf_iterator.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/bits/stringfwd.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/cctype
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/cerrno
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/clocale
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/cmath
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/cstdint
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/cstdio
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/cstdlib
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/cwchar
@@ -113,7 +122,9 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/ex
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/ext/atomicity.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/ext/new_allocator.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/ext/numeric_traits.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/ext/string_conversions.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/ext/type_traits.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/initializer_list
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/ios
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/iosfwd
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/iostream
@@ -123,26 +134,33 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/os
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/stdexcept
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/streambuf
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/string
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/system_error
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/c++/5/type_traits
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/ctype.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/endian.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/features.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/libio.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/limits.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/linux/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/linux/limits.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/locale.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/math.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/pthread.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/sched.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/stdc-predef.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/stdint.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/stdio.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/stdlib.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/string.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/time.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/wchar.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/wctype.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/asm/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/bits/byteswap-16.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/bits/byteswap.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/bits/endian.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/bits/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_val.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_valf.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_vall.h
@@ -188,6 +206,7 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-l
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/ctype_base.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/ctype_inline.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/error_constants.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/gthr.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h
@@ -202,6 +221,7 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/lib/gcc/x86_64-l
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/local/cuda/include/builtin_types.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/local/cuda/include/channel_descriptor.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: /usr/local/cuda/include/common_functions.h
@@ -260,7 +280,7 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: CMakeFiles/cudasift.d
 CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o: ../cudaImage.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pan/Github/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o"
 	cd /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir && /usr/bin/cmake -E make_directory /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//.
-	cd /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_cudaImage.cu.o -D generated_cubin_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_cudaImage.cu.o.cubin.txt -P /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_cudaImage.cu.o.cmake
+	cd /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_cudaImage.cu.o -D generated_cubin_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_cudaImage.cu.o.cubin.txt -P /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_cudaImage.cu.o.cmake
 
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: ../cudaImage.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: ../cudaSift.h
@@ -271,10 +291,13 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: ../cudaSiftH.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: ../cudautils.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/_G_config.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/alloca.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/asm-generic/errno-base.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/asm-generic/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/assert.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/algorithm
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/backward/binders.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/algorithmfwd.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/alloc_traits.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/allocator.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/basic_ios.h
@@ -286,7 +309,10 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bi
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/cxxabi_forced.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/exception_defines.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/exception_ptr.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/functexcept.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/functional_hash.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/hash_bytes.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/ios_base.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/istream.tcc
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/locale_classes.h
@@ -296,29 +322,40 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bi
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/localefwd.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/memoryfwd.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/move.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/nested_exception.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/ostream.tcc
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/ostream_insert.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/postypes.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/predefined_ops.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/ptr_traits.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/random.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/random.tcc
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/range_access.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_algo.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_algobase.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_bvector.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_construct.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_function.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_heap.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_iterator.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_iterator_base_funcs.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_iterator_base_types.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_numeric.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_pair.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_relops.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_tempbuf.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_uninitialized.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stl_vector.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/streambuf.tcc
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/streambuf_iterator.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/stringfwd.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/uniform_int_dist.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/bits/vector.tcc
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/cctype
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/cerrno
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/clocale
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/cmath
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/cstdint
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/cstdio
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/cstdlib
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/cstring
@@ -330,37 +367,50 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/ex
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/ext/atomicity.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/ext/new_allocator.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/ext/numeric_traits.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/ext/string_conversions.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/ext/type_traits.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/initializer_list
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/ios
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/iosfwd
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/iostream
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/istream
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/limits
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/new
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/numeric
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/ostream
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/random
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/stdexcept
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/streambuf
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/string
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/system_error
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/type_traits
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/utility
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/c++/5/vector
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/ctype.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/endian.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/features.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/libio.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/limits.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/linux/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/linux/limits.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/locale.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/math.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/pthread.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/sched.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/stdc-predef.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/stdint.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/stdio.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/stdlib.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/string.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/time.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/wchar.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/wctype.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/asm/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/bits/byteswap-16.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/bits/byteswap.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/bits/endian.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/bits/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_val.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_valf.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_vall.h
@@ -406,8 +456,10 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-l
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/ctype_base.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/ctype_inline.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/error_constants.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/gthr.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/opt_random.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-linux-gnu/gnu/stubs.h
@@ -418,8 +470,62 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/x86_64-l
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/include/xlocale.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/adxintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/ammintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx2intrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512bwintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512cdintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512dqintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512erintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512fintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512ifmaintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512ifmavlintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512pfintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512vbmiintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512vbmivlintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512vlbwintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512vldqintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avx512vlintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/avxintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/bmi2intrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/bmiintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/clflushoptintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/clwbintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/f16cintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/fma4intrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/fmaintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/fxsrintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/ia32intrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/immintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/lwpintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/lzcntintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/mm3dnow.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/mwaitxintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/pcommitintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/pmmintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/popcntintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/prfchwintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/rdseedintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/rtmintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/shaintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/smmintrin.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/tbmintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/tmmintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/wmmintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/x86intrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/xmmintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/xopintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/xsavecintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/xsaveintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/xsaveoptintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/xsavesintrin.h
+CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/xtestintrin.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/local/cuda/include/builtin_types.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/local/cuda/include/channel_descriptor.h
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: /usr/local/cuda/include/common_functions.h
@@ -478,7 +584,7 @@ CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: CMakeFiles/cudasift.d
 CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o: ../cudaSiftH.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pan/Github/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building NVCC (Device) object CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o"
 	cd /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir && /usr/bin/cmake -E make_directory /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//.
-	cd /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_cudaSiftH.cu.o -D generated_cubin_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_cudaSiftH.cu.o.cubin.txt -P /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_cudaSiftH.cu.o.cmake
+	cd /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_cudaSiftH.cu.o -D generated_cubin_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_cudaSiftH.cu.o.cubin.txt -P /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_cudaSiftH.cu.o.cmake
 
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: ../cudaImage.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: ../cudaSift.h
@@ -486,8 +592,11 @@ CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: ../cudautils.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: ../matching.cu
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/_G_config.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/alloca.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/asm-generic/errno-base.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/asm-generic/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/assert.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/backward/binders.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/alloc_traits.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/allocator.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/atomic_lockfree_defines.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/basic_ios.h
@@ -499,7 +608,10 @@ CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bit
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/cpp_type_traits.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/cxxabi_forced.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/exception_defines.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/exception_ptr.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/functexcept.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/functional_hash.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/hash_bytes.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/ios_base.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/istream.tcc
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/locale_classes.h
@@ -509,6 +621,7 @@ CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bit
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/localefwd.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/memoryfwd.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/move.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/nested_exception.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/ostream.tcc
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/ostream_insert.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/postypes.h
@@ -525,8 +638,10 @@ CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bit
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/streambuf_iterator.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/bits/stringfwd.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/cctype
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/cerrno
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/clocale
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/cmath
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/cstdint
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/cstdio
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/cstdlib
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/cwchar
@@ -537,7 +652,9 @@ CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/ext
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/ext/atomicity.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/ext/new_allocator.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/ext/numeric_traits.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/ext/string_conversions.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/ext/type_traits.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/initializer_list
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/ios
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/iosfwd
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/iostream
@@ -547,26 +664,33 @@ CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/ost
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/stdexcept
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/streambuf
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/string
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/system_error
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/c++/5/type_traits
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/ctype.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/endian.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/features.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/libio.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/limits.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/linux/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/linux/limits.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/locale.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/math.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/pthread.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/sched.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/stdc-predef.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/stdint.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/stdio.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/stdlib.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/string.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/time.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/wchar.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/wctype.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/asm/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/bits/byteswap-16.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/bits/byteswap.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/bits/endian.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/bits/errno.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_val.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_valf.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/bits/huge_vall.h
@@ -612,6 +736,7 @@ CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-li
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/ctype_base.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/ctype_inline.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/error_constants.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/gthr.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h
@@ -626,6 +751,7 @@ CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/lib/gcc/x86_64-li
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h
+CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/local/cuda/include/builtin_types.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/local/cuda/include/channel_descriptor.h
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: /usr/local/cuda/include/common_functions.h
@@ -684,20 +810,20 @@ CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: CMakeFiles/cudasift.di
 CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o: ../matching.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pan/Github/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building NVCC (Device) object CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o"
 	cd /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir && /usr/bin/cmake -E make_directory /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//.
-	cd /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_matching.cu.o -D generated_cubin_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_matching.cu.o.cubin.txt -P /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_matching.cu.o.cmake
+	cd /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_matching.cu.o -D generated_cubin_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_matching.cu.o.cubin.txt -P /home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_matching.cu.o.cmake
 
 CMakeFiles/cudasift.dir/geomFuncs.cpp.o: CMakeFiles/cudasift.dir/flags.make
 CMakeFiles/cudasift.dir/geomFuncs.cpp.o: ../geomFuncs.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pan/Github/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cudasift.dir/geomFuncs.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cudasift.dir/geomFuncs.cpp.o -c /home/pan/Github/CudaSift/geomFuncs.cpp
+	g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cudasift.dir/geomFuncs.cpp.o -c /home/pan/Github/CudaSift/geomFuncs.cpp
 
 CMakeFiles/cudasift.dir/geomFuncs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cudasift.dir/geomFuncs.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pan/Github/CudaSift/geomFuncs.cpp > CMakeFiles/cudasift.dir/geomFuncs.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pan/Github/CudaSift/geomFuncs.cpp > CMakeFiles/cudasift.dir/geomFuncs.cpp.i
 
 CMakeFiles/cudasift.dir/geomFuncs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cudasift.dir/geomFuncs.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pan/Github/CudaSift/geomFuncs.cpp -o CMakeFiles/cudasift.dir/geomFuncs.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pan/Github/CudaSift/geomFuncs.cpp -o CMakeFiles/cudasift.dir/geomFuncs.cpp.s
 
 CMakeFiles/cudasift.dir/geomFuncs.cpp.o.requires:
 
@@ -713,15 +839,15 @@ CMakeFiles/cudasift.dir/geomFuncs.cpp.o.provides.build: CMakeFiles/cudasift.dir/
 CMakeFiles/cudasift.dir/mainSift.cpp.o: CMakeFiles/cudasift.dir/flags.make
 CMakeFiles/cudasift.dir/mainSift.cpp.o: ../mainSift.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pan/Github/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cudasift.dir/mainSift.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cudasift.dir/mainSift.cpp.o -c /home/pan/Github/CudaSift/mainSift.cpp
+	g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cudasift.dir/mainSift.cpp.o -c /home/pan/Github/CudaSift/mainSift.cpp
 
 CMakeFiles/cudasift.dir/mainSift.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cudasift.dir/mainSift.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pan/Github/CudaSift/mainSift.cpp > CMakeFiles/cudasift.dir/mainSift.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pan/Github/CudaSift/mainSift.cpp > CMakeFiles/cudasift.dir/mainSift.cpp.i
 
 CMakeFiles/cudasift.dir/mainSift.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cudasift.dir/mainSift.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pan/Github/CudaSift/mainSift.cpp -o CMakeFiles/cudasift.dir/mainSift.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pan/Github/CudaSift/mainSift.cpp -o CMakeFiles/cudasift.dir/mainSift.cpp.s
 
 CMakeFiles/cudasift.dir/mainSift.cpp.o.requires:
 

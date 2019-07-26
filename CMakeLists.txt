@@ -5,6 +5,11 @@ set(cudaSift_VERSION_MAJOR 2)
 set(cudaSift_VERSION_MINOR 0)
 set(cudaSift_VERSION_PATCH 0)
 
+set( CMAKE_CXX_COMPILER "g++" )
+set( CMAKE_BUILD_TYPE "Release" )
+set( CMAKE_CXX_FLAGS "-std=c++11 -march=native -O3" )
+
+
 set(CPACK_PACKAGE_VERSION_MAJOR "${cudaSift_VERSION_MAJOR}")
 set(CPACK_PACKAGE_VERSION_MINOR "${cudaSift_VERSION_MINOR}")
 set(CPACK_PACKAGE_VERSION_PATCH "${cudaSift_VERSION_PATCH}")

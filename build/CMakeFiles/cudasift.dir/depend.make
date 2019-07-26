@@ -172,6 +172,7 @@ CMakeFiles/cudasift.dir/mainSift.cpp.o: /home/pan/.tspkg/include/opencv-3.3.1-de
 CMakeFiles/cudasift.dir/mainSift.cpp.o: /home/pan/.tspkg/include/opencv-3.3.1-dev/opencv2/core/version.hpp
 CMakeFiles/cudasift.dir/mainSift.cpp.o: /home/pan/.tspkg/include/opencv-3.3.1-dev/opencv2/core/vsx_utils.hpp
 CMakeFiles/cudasift.dir/mainSift.cpp.o: /home/pan/.tspkg/include/opencv-3.3.1-dev/opencv2/features2d.hpp
+CMakeFiles/cudasift.dir/mainSift.cpp.o: /home/pan/.tspkg/include/opencv-3.3.1-dev/opencv2/features2d/features2d.hpp
 CMakeFiles/cudasift.dir/mainSift.cpp.o: /home/pan/.tspkg/include/opencv-3.3.1-dev/opencv2/flann.hpp
 CMakeFiles/cudasift.dir/mainSift.cpp.o: /home/pan/.tspkg/include/opencv-3.3.1-dev/opencv2/flann/all_indices.h
 CMakeFiles/cudasift.dir/mainSift.cpp.o: /home/pan/.tspkg/include/opencv-3.3.1-dev/opencv2/flann/allocator.h
@@ -272,4 +273,5 @@ CMakeFiles/cudasift.dir/mainSift.cpp.o: /home/pan/.tspkg/include/opencv-3.3.1-de
 CMakeFiles/cudasift.dir/mainSift.cpp.o: ../cudaImage.h
 CMakeFiles/cudasift.dir/mainSift.cpp.o: ../cudaSift.h
 CMakeFiles/cudasift.dir/mainSift.cpp.o: ../mainSift.cpp
+CMakeFiles/cudasift.dir/mainSift.cpp.o: ../tic_toc.h
 
