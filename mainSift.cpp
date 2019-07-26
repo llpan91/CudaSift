@@ -37,13 +37,12 @@ void visFeatureTracking(cv::Mat pre_img, cv::Mat cur_img, std::vector<pair<cv::P
 void getCorrespondence(SiftData &siftData1, SiftData &siftData2, std::vector<std::pair<cv::Point2f, cv::Point2f> > &correspondence);
 double ScaleUp(CudaImage &res, CudaImage &src);
 
+
 ///////////////////////////////////////////////////////////////////////////////
 // Main program
 ///////////////////////////////////////////////////////////////////////////////
 int main(int argc, char **argv) {
 
-  
-  
   int devNum = 0, imgSet = 0;
   
   // read two image
@@ -64,13 +63,19 @@ int main(int argc, char **argv) {
   // Initial Cuda images and download images to device
   std::cout << "Initializing data..." << std::endl;
   
-   TicToc t_start1111;
+   
 //   InitCuda(devNum); 
-  CudaImage img1, img2;
-  img1.Allocate(w, h, iAlignUp(w, 128), false, NULL, (float*)limg.data);
-  img2.Allocate(w, h, iAlignUp(w, 128), false, NULL, (float*)rimg.data);
+//   CudaImage img1, img2;
+//   img1.Allocate(w, h, iAlignUp(w, 128), false, NULL, (float*)limg.data);
+//   img2.Allocate(w, h, iAlignUp(w, 128), false, NULL, (float*)rimg.data);
   
-  std::cout << "Time1111 cost = " << t_start1111.toc()  << "ms" << std::endl;
+  TicToc t_start1;
+  CudaImage img1(w, h,  iAlignUp(w, 128), false, NULL); 
+  CudaImage img2(w, h,  iAlignUp(w, 128), false, NULL); 
+  std::cout << "Time1 cost = " << t_start1.toc()  << "ms" << std::endl;
+  
+  img1.setImageIntiGPU((float*)limg.data);
+  img2.setImageIntiGPU((float*)rimg.data);
   img1.Download();
   img2.Download(); 
   
@@ -89,26 +94,23 @@ int main(int argc, char **argv) {
 //       ExtractSift(siftData1, img1, 5, initBlur, thresh, 0.0f, false, memoryTmp);
 //       ExtractSift(siftData2, img2, 5, initBlur, thresh, 0.0f, false, memoryTmp);
 //     }
-  std::cout << "Time222 cost = " << t_start2.toc()  << "ms" << std::endl;
+  std::cout << "Time2 cost = " << t_start2.toc()  << "ms" << std::endl;
   
   TicToc t_start;
   ExtractSift(siftData1, img1, 5, initBlur, thresh, 0.0f, false, memoryTmp);
   ExtractSift(siftData2, img2, 5, initBlur, thresh, 0.0f, false, memoryTmp);
   FreeSiftTempMemory(memoryTmp);
-    
-    // Match Sift features and find a homography
-    MatchSiftData(siftData1, siftData2);
-    
-    std::cout << "Time333 cost = " << t_start.toc()  << "ms" << std::endl;
-    
-    float homography[9];
-    int numMatches;
-    FindHomography(siftData1, homography, &numMatches, 10000, 0.00f, 0.80f, 5.0);
-    int numFit = ImproveHomography(siftData1, homography, 5, 0.00f, 0.80f, 3.0);
-    
-    std::cout << "Number of original features: " <<  siftData1.numPts << " " << siftData2.numPts << std::endl;
-    std::cout << "Number of matching features: " << numFit << " " << numMatches << " " << 100.0f*numFit/std::min(siftData1.numPts, siftData2.numPts) << "% " << initBlur << " " << thresh << std::endl;
-    //}
+  // Match Sift features and find a homography
+  MatchSiftData(siftData1, siftData2);
+  std::cout << "Time3 cost = " << t_start.toc()  << "ms" << std::endl;
+  
+  float homography[9];
+  int numMatches;
+  FindHomography(siftData1, homography, &numMatches, 10000, 0.00f, 0.80f, 5.0);
+  int numFit = ImproveHomography(siftData1, homography, 5, 0.00f, 0.80f, 3.0);
+  
+  std::cout << "Number of original features: " <<  siftData1.numPts << " " << siftData2.numPts << std::endl;
+  std::cout << "Number of matching features: " << numFit << " " << numMatches << " " << 100.0f*numFit/std::min(siftData1.numPts, siftData2.numPts) << "% " << initBlur << " " << thresh << std::endl;
   
   // Print out and store summary data
   // PrintMatchData(siftData1, siftData2, img1);

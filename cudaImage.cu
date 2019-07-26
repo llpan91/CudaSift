@@ -12,8 +12,7 @@ int iDivDown(int a, int b) { return a/b; }
 int iAlignUp(int a, int b) { return (a%b != 0) ?  (a - a%b + b) : a; }
 int iAlignDown(int a, int b) { return a - a%b; }
 
-void CudaImage::Allocate(int w, int h, int p, bool host, float *devmem, float *hostmem) 
-{
+void CudaImage::Allocate(int w, int h, int p, bool host, float *devmem, float *hostmem) {
   width = w;
   height = h; 
   pitch = p; 
@@ -21,7 +20,8 @@ void CudaImage::Allocate(int w, int h, int p, bool host, float *devmem, float *h
   h_data = hostmem; 
   t_data = NULL; 
   if (devmem==NULL) {
-    safeCall(cudaMallocPitch((void **)&d_data, (size_t*)&pitch, (size_t)(sizeof(float)*width), (size_t)height));
+    safeCall(cudaMallocPitch((void **)&d_data, (size_t*)&pitch, (size_t)(sizeof(float)*width), 
+			     (size_t)height));
     pitch /= sizeof(float);
     if (d_data==NULL) 
       printf("Failed to allocate device data\n");
@@ -39,8 +39,22 @@ CudaImage::CudaImage() :
 
 }
 
-CudaImage::~CudaImage()
-{
+
+CudaImage::CudaImage(int _width, int _height, int _pitch, bool _withHost, float *devMem):
+  width(_width), height(_height), d_data(devMem), h_data(NULL), t_data(NULL) {
+  if (d_data == NULL) {
+    safeCall(cudaMallocPitch((void **)&d_data, (size_t*)&pitch, (size_t)(sizeof(float)*width), (size_t)height));
+    pitch /= sizeof(float);
+    if (d_data==NULL) 
+      printf("Failed to allocate device data\n");
+    d_internalAlloc = true;
+  }
+  
+}
+
+
+
+CudaImage::~CudaImage(){
   if (d_internalAlloc && d_data!=NULL) 
     safeCall(cudaFree(d_data));
   d_data = NULL;
@@ -51,7 +65,11 @@ CudaImage::~CudaImage()
     safeCall(cudaFreeArray((cudaArray *)t_data));
   t_data = NULL;
 }
-  
+ 
+ void CudaImage::setImageIntiGPU(float *hostmem){
+ h_data = hostmem;
+}
+ 
 double CudaImage::Download()  
 {
   TimerGPU timer(0);
