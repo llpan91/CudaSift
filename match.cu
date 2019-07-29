@@ -913,8 +913,8 @@ __global__ void Match9(float *d_pts1, float *d_pts2, float *d_score, int *d_inde
 }
 
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]){
+  
   safeCall(cudaSetDevice(0));
 
   size_t space = sizeof(float)*NPTS*NDIM*2 + 8;

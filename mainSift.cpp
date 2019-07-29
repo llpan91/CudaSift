@@ -3,7 +3,6 @@
 //              celle @ csc.kth.se                       //
 //********************************************************//  
 
-
 #include <cstdio>
 #include <cstring>
 #include <algorithm>
