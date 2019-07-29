@@ -17,6 +17,10 @@
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
+//For backwards compatibility, what version of CMake commands and
+// syntax should this version of CMake try to support.
+CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
+
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
 CMAKE_BUILD_TYPE:STRING=
@@ -114,7 +118,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=cudaSift
+CMAKE_PROJECT_NAME:STATIC=gpu_sift
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -295,14 +299,35 @@ CUDA_npps_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libnpps.so
 //Path to a library.
 CUDA_rt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 
+//Single output directory for building all executables.
+EXECUTABLE_OUTPUT_PATH:PATH=
+
+//Single output directory for building all libraries.
+LIBRARY_OUTPUT_PATH:PATH=
+
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/home/pan/.tspkg/share/OpenCV-3.3.1-dev
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/home/pan/Github/CudaSift/build
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/home/pan/Github/CudaSift
 
 //Value Computed by CMake
 cudaSift_BINARY_DIR:STATIC=/home/pan/Github/CudaSift/build
 
 //Value Computed by CMake
 cudaSift_SOURCE_DIR:STATIC=/home/pan/Github/CudaSift
+
+//Value Computed by CMake
+gpu_sift_BINARY_DIR:STATIC=/home/pan/Github/CudaSift/build
+
+//Value Computed by CMake
+gpu_sift_SOURCE_DIR:STATIC=/home/pan/Github/CudaSift
+
+//Dependencies for the target
+sift_gpu_LIB_DEPENDS:STATIC=general;/usr/local/cuda/lib64/libcudart_static.a;general;-lpthread;general;dl;general;/usr/lib/x86_64-linux-gnu/librt.so;general;opencv_calib3d;general;opencv_core;general;opencv_dnn;general;opencv_features2d;general;opencv_flann;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_shape;general;opencv_stitching;general;opencv_superres;general;opencv_video;general;opencv_videoio;general;opencv_videostab;general;opencv_viz;general;opencv_aruco;general;opencv_bgsegm;general;opencv_bioinspired;general;opencv_ccalib;general;opencv_cvv;general;opencv_datasets;general;opencv_dpm;general;opencv_face;general;opencv_fuzzy;general;opencv_hdf;general;opencv_img_hash;general;opencv_line_descriptor;general;opencv_optflow;general;opencv_phase_unwrapping;general;opencv_plot;general;opencv_reg;general;opencv_rgbd;general;opencv_saliency;general;opencv_stereo;general;opencv_structured_light;general;opencv_surface_matching;general;opencv_text;general;opencv_tracking;general;opencv_xfeatures2d;general;opencv_ximgproc;general;opencv_xobjdetect;general;opencv_xphoto;
 
 
 ########################
@@ -458,7 +483,7 @@ CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 CUDA_64_BIT_DEVICE_CODE-ADVANCED:INTERNAL=1
 //List of intermediate files that are part of the cuda dependency
 // scanning.
-CUDA_ADDITIONAL_CLEAN_FILES:INTERNAL=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_cudaImage.cu.o.depend;/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_cudaSiftH.cu.o.depend;/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_matching.cu.o.depend
+CUDA_ADDITIONAL_CLEAN_FILES:INTERNAL=/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_cudaImage.cu.o.depend;/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_cudaSiftH.cu.o.depend;/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_matching.cu.o.depend;/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//sift_gpu_generated_cudaImage.cu.o.depend;/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//sift_gpu_generated_cudaSiftH.cu.o.depend;/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//sift_gpu_generated_matching.cu.o.depend
 //ADVANCED property for variable: CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE
 CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_BUILD_CUBIN

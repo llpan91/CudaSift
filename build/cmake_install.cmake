@@ -32,31 +32,6 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES
-    "/home/pan/Github/CudaSift/cudaImage.cu"
-    "/home/pan/Github/CudaSift/cudaImage.h"
-    "/home/pan/Github/CudaSift/cudaSiftH.cu"
-    "/home/pan/Github/CudaSift/cudaSiftH.h"
-    "/home/pan/Github/CudaSift/matching.cu"
-    "/home/pan/Github/CudaSift/cudaSiftD.h"
-    "/home/pan/Github/CudaSift/cudaSift.h"
-    "/home/pan/Github/CudaSift/cudautils.h"
-    "/home/pan/Github/CudaSift/geomFuncs.cpp"
-    "/home/pan/Github/CudaSift/mainSift.cpp"
-    "/home/pan/Github/CudaSift/cudaSiftD.cu"
-    "/home/pan/Github/CudaSift/CMakeLists.txt"
-    "/home/pan/Github/CudaSift/Copyright.txt"
-    )
-endif()
-
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/data" TYPE FILE FILES
-    "/home/pan/Github/CudaSift/data/left.pgm"
-    "/home/pan/Github/CudaSift/data/righ.pgm"
-    )
-endif()
-
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

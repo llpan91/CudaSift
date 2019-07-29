@@ -18,6 +18,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o.depend"
   "CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o.depend"
   "CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o.depend"
+  "CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o.depend"
+  "CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o.depend"
+  "CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o.depend"
   "/usr/share/cmake-3.5/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake"
@@ -57,6 +60,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CPackConfig.cmake"
   "CPackSourceConfig.cmake"
+  "CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o.cmake"
+  "CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o.cmake"
+  "CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o.cmake"
   "CMakeFiles/cudasift.dir/cudasift_generated_cudaImage.cu.o.cmake"
   "CMakeFiles/cudasift.dir/cudasift_generated_cudaSiftH.cu.o.cmake"
   "CMakeFiles/cudasift.dir/cudasift_generated_matching.cu.o.cmake"
@@ -65,5 +71,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/sift_gpu.dir/DependInfo.cmake"
   "CMakeFiles/cudasift.dir/DependInfo.cmake"
   )
