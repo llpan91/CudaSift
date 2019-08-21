@@ -3,8 +3,7 @@
 
 //================= Device matching functions =====================//
 
-__global__ void MatchSiftPoints(SiftPoint *sift1, SiftPoint *sift2, float *corrData, int numPts1, int numPts2)
-{
+__global__ void MatchSiftPoints(SiftPoint *sift1, SiftPoint *sift2, float *corrData, int numPts1, int numPts2){
   __shared__ float siftPoint[128];
   __shared__ float sums[16*16];
   const int tx = threadIdx.x;
@@ -36,8 +35,7 @@ __global__ void MatchSiftPoints(SiftPoint *sift1, SiftPoint *sift2, float *corrD
   __syncthreads();
 }
 
-__global__ void MatchSiftPoints2(SiftPoint *sift1, SiftPoint *sift2, float *corrData, int numPts1, int numPts2)
-{
+__global__ void MatchSiftPoints2(SiftPoint *sift1, SiftPoint *sift2, float *corrData, int numPts1, int numPts2){
   __shared__ float siftPoints1[16*128];
   __shared__ float siftPoints2[16*128];
   const int tx = threadIdx.x;
@@ -62,8 +60,7 @@ __global__ void MatchSiftPoints2(SiftPoint *sift1, SiftPoint *sift2, float *corr
     corrData[p1*gridDim.y*16 + p2] = (p2<numPts2 ? sum : -1.0f);
 }
 
-__global__ void FindMaxCorr(float *corrData, SiftPoint *sift1, SiftPoint *sift2, int numPts1, int corrWidth, int siftSize)
-{
+__global__ void FindMaxCorr(float *corrData, SiftPoint *sift1, SiftPoint *sift2, int numPts1, int corrWidth, int siftSize){
   __shared__ float maxScore[16*16];
   __shared__ float maxScor2[16*16];
   __shared__ int maxIndex[16*16];
@@ -113,8 +110,7 @@ __global__ void FindMaxCorr(float *corrData, SiftPoint *sift1, SiftPoint *sift2,
 }
 
 // Version based on suggestion by Nicholas Lin
-__global__ void FindMaxCorr3(float *corrData, SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2)
-{
+__global__ void FindMaxCorr3(float *corrData, SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2){
   int block_dim = blockDim.x; // blockDim.x == 16
   const int tx = threadIdx.x;
   const int ty = threadIdx.y;
@@ -177,8 +173,7 @@ __global__ void FindMaxCorr3(float *corrData, SiftPoint *sift1, SiftPoint *sift2
 #define FMC2W 16
 #define FMC2H 4
 
-__global__ void FindMaxCorr2(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2)
-{
+__global__ void FindMaxCorr2(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2){
   __shared__ float siftPoint[128];
   __shared__ float maxScore[FMC2H]; 
   __shared__ float maxScor2[FMC2H]; 
@@ -241,8 +236,7 @@ __global__ void FindMaxCorr2(SiftPoint *sift1, SiftPoint *sift2, int numPts1, in
   }
 }
 
-__global__ void FindMaxCorr4(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2)
-{
+__global__ void FindMaxCorr4(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2){
   __shared__ float siftPoint[128*FMC2H];
   __shared__ float maxScore[FMC2H]; 
   __shared__ float maxScor2[FMC2H]; 
@@ -286,8 +280,7 @@ __global__ void FindMaxCorr4(SiftPoint *sift1, SiftPoint *sift2, int numPts1, in
 }
 
 
-__global__ void CleanMatches(SiftPoint *sift1, int numPts1)
-{
+__global__ void CleanMatches(SiftPoint *sift1, int numPts1){
   const int p1 = min(blockIdx.x*64 + threadIdx.x, numPts1-1);
   sift1[p1].score = 0.0f;
 }
@@ -298,8 +291,7 @@ __global__ void CleanMatches(SiftPoint *sift1, int numPts1)
 #define NRX    2
 #define NDIM 128
 
-__global__ void FindMaxCorr10(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2)
-{
+__global__ void FindMaxCorr10(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2){
   __shared__ float4 buffer1[M7W*NDIM/4]; 
   __shared__ float4 buffer2[M7H*NDIM/4];       
   int tx = threadIdx.x;
@@ -408,8 +400,7 @@ __global__ void FindMaxCorr10(SiftPoint *sift1, SiftPoint *sift2, int numPts1, i
 
 __device__ volatile int lock = 0;
 
-__global__ void FindMaxCorr9(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2)
-{
+__global__ void FindMaxCorr9(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2){
   __shared__ float4 siftParts1[FMC_BW*FMC_BD]; // 4*32*8 = 1024
   __shared__ float4 siftParts2[FMC_BH*FMC_BD]; // 4*32*8 = 1024
   //__shared__ float blksums[FMC_BW*FMC_BH];     // 32*32  = 1024
@@ -524,8 +515,7 @@ __global__ void FindMaxCorr9(SiftPoint *sift1, SiftPoint *sift2, int numPts1, in
     atomicExch((int* )&lock, 0);
 }
 
-__global__ void FindMaxCorr8(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2)
-{
+__global__ void FindMaxCorr8(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2){
   __shared__ float4 siftParts1[FMC_BW*FMC_BD]; // 4*32*8 = 1024
   __shared__ float4 siftParts2[FMC_BH*FMC_BD]; // 4*32*8 = 1024
   __shared__ float blksums[FMC_BW*FMC_BH];     // 32*32  = 1024
@@ -612,8 +602,7 @@ __global__ void FindMaxCorr8(SiftPoint *sift1, SiftPoint *sift2, int numPts1, in
     atomicExch((int* )&lock, 0);
 }
 
-__global__ void FindMaxCorr7(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2)
-{
+__global__ void FindMaxCorr7(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2){
   __shared__ float siftParts1[17*64]; // features in columns
   __shared__ float siftParts2[16*64]; // one extra to avoid shared conflicts
   float4 *pts1 = (float4*)siftParts1;
@@ -693,8 +682,7 @@ __global__ void FindMaxCorr7(SiftPoint *sift1, SiftPoint *sift2, int numPts1, in
     atomicExch((int* )&lock, 0);
 }
 
-__global__ void FindMaxCorr6(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2)
-{
+__global__ void FindMaxCorr6(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2){
   //__shared__ float siftParts1[128*16]; // features in columns
   __shared__ float siftParts2[128*16]; // one extra to avoid shared conflicts
   __shared__ float sums[16*16];
@@ -757,8 +745,7 @@ __global__ void FindMaxCorr6(SiftPoint *sift1, SiftPoint *sift2, int numPts1, in
     atomicExch((int* )&lock, 0);
 }
  
-__global__ void FindMaxCorr5(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2)
-{
+__global__ void FindMaxCorr5(SiftPoint *sift1, SiftPoint *sift2, int numPts1, int numPts2){
   __shared__ float siftParts1[17*16]; // features in columns
   __shared__ float siftParts2[17*16]; // one extra to avoid shared conflicts
   const int tx = threadIdx.x;
@@ -819,8 +806,7 @@ __global__ void FindMaxCorr5(SiftPoint *sift1, SiftPoint *sift2, int numPts1, in
  
 
 template <int size>
-__device__ void InvertMatrix(float elem[size][size], float res[size][size]) 
-{  
+__device__ void InvertMatrix(float elem[size][size], float res[size][size]) {  
   int indx[size];
   float b[size];
   float vv[size];
@@ -904,9 +890,7 @@ __device__ void InvertMatrix(float elem[size][size], float res[size][size])
   }
 }
 
-__global__ void ComputeHomographies(float *coord, int *randPts, float *homo, 
-  int numPts) 
-{
+__global__ void ComputeHomographies(float *coord, int *randPts, float *homo, int numPts) {
   float a[8][8], ia[8][8];
   float b[8]; 
   const int bx = blockIdx.x;
@@ -951,8 +935,7 @@ __global__ void ComputeHomographies(float *coord, int *randPts, float *homo,
 #define TESTHOMO_LOOPS 16 // number of loops per block,  alt.  8, 16 
 
 __global__ void TestHomographies(float *d_coord, float *d_homo, 
-  int *d_counts, int numPts, float thresh2)
-{
+  int *d_counts, int numPts, float thresh2){
   __shared__ float homo[8*TESTHOMO_LOOPS];
   __shared__ int cnts[TESTHOMO_TESTS*TESTHOMO_LOOPS];
   const int tx = threadIdx.x;
@@ -997,8 +980,8 @@ __global__ void TestHomographies(float *d_coord, float *d_homo,
 
 //================= Host matching functions =====================//
 
-double FindHomography(SiftData &data, float *homography, int *numMatches, int numLoops, float minScore, float maxAmbiguity, float thresh)
-{
+double FindHomography(SiftData &data, float *homography, int *numMatches, int numLoops, 
+		      float minScore, float maxAmbiguity, float thresh){
   *numMatches = 0;
   homography[0] = homography[4] = homography[8] = 1.0f;
   homography[1] = homography[2] = homography[3] = 0.0f;
@@ -1086,9 +1069,7 @@ double FindHomography(SiftData &data, float *homography, int *numMatches, int nu
   return gpuTime;
 }
 
-
-double MatchSiftData(SiftData &data1, SiftData &data2)
-{
+double MatchSiftData(SiftData &data1, SiftData &data2){
   TimerGPU timer(0);
   int numPts1 = data1.numPts;
   int numPts2 = data2.numPts;

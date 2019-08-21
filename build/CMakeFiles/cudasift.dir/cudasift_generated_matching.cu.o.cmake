@@ -56,20 +56,20 @@ endif()
 
 # Set these up as variables to make reading the generated file easier
 set(CMAKE_COMMAND "/usr/bin/cmake") # path
-set(source_file "/home/pan/Github/CudaSift/matching.cu") # path
-set(NVCC_generated_dependency_file "/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_matching.cu.o.NVCC-depend") # path
-set(cmake_dependency_file "/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_matching.cu.o.depend") # path
+set(source_file "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/matching.cu") # path
+set(NVCC_generated_dependency_file "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_matching.cu.o.NVCC-depend") # path
+set(cmake_dependency_file "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/cudasift.dir//cudasift_generated_matching.cu.o.depend") # path
 set(CUDA_make2cmake "/usr/share/cmake-3.5/Modules/FindCUDA/make2cmake.cmake") # path
 set(CUDA_parse_cubin "/usr/share/cmake-3.5/Modules/FindCUDA/parse_cubin.cmake") # path
 set(build_cubin OFF) # bool
 set(CUDA_HOST_COMPILER "/usr/bin/cc") # path
 # We won't actually use these variables for now, but we need to set this, in
 # order to force this file to be run again if it changes.
-set(generated_file_path "/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//.") # path
-set(generated_file_internal "/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_matching.cu.o") # path
-set(generated_cubin_file_internal "/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_matching.cu.o.cubin.txt") # path
+set(generated_file_path "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/cudasift.dir//.") # path
+set(generated_file_internal "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_matching.cu.o") # path
+set(generated_cubin_file_internal "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/cudasift.dir//./cudasift_generated_matching.cu.o.cubin.txt") # path
 
-set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda/bin/nvcc") # path
+set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda-9.0/bin/nvcc") # path
 set(CUDA_NVCC_FLAGS -lineinfo;-ccbin;/usr/bin/gcc-6;--compiler-options;-O2;-D_FORCE_INLINES;-DVERBOSE_NOT ;; -arch=sm_35) # list
 # Build specific configuration flags
 set(CUDA_NVCC_FLAGS_RELEASE  ; )
@@ -77,7 +77,7 @@ set(CUDA_NVCC_FLAGS_DEBUG  ; )
 set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )
 set(CUDA_NVCC_FLAGS_RELWITHDEBINFO  ; )
 set(nvcc_flags -m64;--std;c++11) # list
-set(CUDA_NVCC_INCLUDE_ARGS "-I/usr/local/cuda/include;-I/home/pan/Github/CudaSift;-I/usr/local/cuda/include") # list (needs to be in quotes to handle spaces properly).
+set(CUDA_NVCC_INCLUDE_ARGS "-I/usr/local/cuda-9.0/include;-I/usr/include/eigen3;-I/home/llpan/Github/visual_lidar_slam/third_party/CudaSift;-I/usr/local/cuda-9.0/include") # list (needs to be in quotes to handle spaces properly).
 set(format_flag "-c") # string
 set(cuda_language_flag ) # list
 

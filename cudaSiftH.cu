@@ -36,8 +36,7 @@ void InitCuda(int devNum)
 	 2.0*prop.memoryClockRate*(prop.memoryBusWidth/8)/1.0e6);
 }
 
-float *AllocSiftTempMemory(int width, int height, int numOctaves, bool scaleUp)
-{
+float *AllocSiftTempMemory(int width, int height, int numOctaves, bool scaleUp){
   TimerGPU timer(0);
   const int nd = NUM_SCALES + 3;
   int w = width*(scaleUp ? 2 : 1); 
@@ -56,10 +55,6 @@ float *AllocSiftTempMemory(int width, int height, int numOctaves, bool scaleUp)
   size_t pitch;
   size += sizeTmp;
   safeCall(cudaMallocPitch((void **)&memoryTmp, &pitch, (size_t)4096, (size+4095)/4096*sizeof(float)));
-#ifdef VERBOSE
-  // printf("Allocated memory size: %d bytes\n", size);
-  // printf("Memory allocation time =      %.2f ms\n\n", timer.read());
-#endif
   return memoryTmp;
 }
 
@@ -68,7 +63,7 @@ void FreeSiftTempMemory(float *memoryTmp)
   if (memoryTmp)
     safeCall(cudaFree(memoryTmp));
 }
-
+// 
 void ExtractSift(SiftData &siftData, CudaImage &img, int numOctaves, double initBlur, float thresh, float lowestScale, bool scaleUp, float *tempMemory) {
   TimerGPU timer(0);
   unsigned int *d_PointCounterAddr;
@@ -372,8 +367,7 @@ double ComputeOrientations(cudaTextureObject_t texObj, CudaImage &src, SiftData 
   return 0.0;
 }
 
-double ExtractSiftDescriptors(cudaTextureObject_t texObj, SiftData &siftData, float subsampling, int octave)
-{
+double ExtractSiftDescriptors(cudaTextureObject_t texObj, SiftData &siftData, float subsampling, int octave){
   dim3 blocks(512); 
   dim3 threads(16, 8);
 #ifdef MANAGEDMEM

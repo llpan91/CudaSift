@@ -7,10 +7,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/pan/.tspkg/share/OpenCV-3.3.1-dev/OpenCVConfig-version.cmake"
-  "/home/pan/.tspkg/share/OpenCV-3.3.1-dev/OpenCVConfig.cmake"
-  "/home/pan/.tspkg/share/OpenCV-3.3.1-dev/OpenCVModules-release.cmake"
-  "/home/pan/.tspkg/share/OpenCV-3.3.1-dev/OpenCVModules.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.5.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
@@ -21,6 +17,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o.depend"
   "CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o.depend"
   "CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o.depend"
+  "/opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVConfig-version.cmake"
+  "/opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVConfig.cmake"
+  "/opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVModules-release.cmake"
+  "/opt/ros/kinetic/share/OpenCV-3.3.1-dev/OpenCVModules.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake"

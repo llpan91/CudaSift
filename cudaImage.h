@@ -19,6 +19,7 @@ public:
   CudaImage(int _width, int _height, int _pitch, bool _withHost, float *devMem = NULL);
   ~CudaImage();
   
+  void setParam(int _width, int _height, int _pitch, bool _withHost, float *devMem = NULL);
   void setImageIntiGPU(float *hostmem);
   void Allocate(int width, int height, int pitch, bool withHost, float *devMem = NULL, float *hostMem = NULL);
   double Download();

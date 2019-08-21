@@ -36,7 +36,6 @@ void getCorrespondence(SiftData &siftData1, SiftData &siftData2, std::vector<int
 		       std::vector<std::pair<cv::Point2f, cv::Point2f> > &correspondence);
 double ScaleUp(CudaImage &res, CudaImage &src);
 
-
 ///////////////////////////////////////////////////////////////////////////////
 // Main program
 ///////////////////////////////////////////////////////////////////////////////
@@ -113,7 +112,7 @@ int main(int argc, char **argv) {
   // Free Sift data from device
   FreeSiftData(siftData1);
   FreeSiftData(siftData2);
-
+  
 //   std::cout << "time = " << t_start.toc() << std::endl;
 }
 

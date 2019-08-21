@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pan/Github/CudaSift
+CMAKE_SOURCE_DIR = /home/llpan/Github/visual_lidar_slam/third_party/CudaSift
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pan/Github/CudaSift/build
+CMAKE_BINARY_DIR = /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sift_gpu.dir/depend.make
@@ -222,65 +222,65 @@ CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/lib/gcc/x86_64-l
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/builtin_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/channel_descriptor.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/common_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/common_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/device_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/host_config.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/host_defines.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/math_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/cuda_runtime.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/device_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/device_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/driver_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/driver_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/host_config.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/host_defines.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/library_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/surface_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/surface_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/texture_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/vector_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/vector_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda/include/vector_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/common_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/device_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/device_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/driver_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/host_config.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/host_defines.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/library_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/surface_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/texture_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o.cmake
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o: ../cudaImage.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pan/Github/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o"
-	cd /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -E make_directory /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//.
-	cd /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_cudaImage.cu.o -D generated_cubin_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_cudaImage.cu.o.cubin.txt -P /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//sift_gpu_generated_cudaImage.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o"
+	cd /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -E make_directory /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//.
+	cd /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_cudaImage.cu.o -D generated_cubin_file:STRING=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_cudaImage.cu.o.cubin.txt -P /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//sift_gpu_generated_cudaImage.cu.o.cmake
 
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: ../cudaImage.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: ../cudaSift.h
@@ -526,65 +526,65 @@ CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-l
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/xsaveoptintrin.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/xsavesintrin.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/xtestintrin.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/builtin_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/channel_descriptor.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/common_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/common_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/device_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/host_config.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/host_defines.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/math_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/cuda_runtime.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/device_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/device_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/driver_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/driver_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/host_config.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/host_defines.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/library_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/surface_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/surface_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/texture_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/vector_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/vector_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda/include/vector_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/common_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/device_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/device_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/driver_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/host_config.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/host_defines.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/library_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/surface_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/texture_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o.cmake
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o: ../cudaSiftH.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pan/Github/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building NVCC (Device) object CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o"
-	cd /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -E make_directory /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//.
-	cd /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_cudaSiftH.cu.o -D generated_cubin_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_cudaSiftH.cu.o.cubin.txt -P /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//sift_gpu_generated_cudaSiftH.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building NVCC (Device) object CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o"
+	cd /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -E make_directory /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//.
+	cd /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_cudaSiftH.cu.o -D generated_cubin_file:STRING=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_cudaSiftH.cu.o.cubin.txt -P /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//sift_gpu_generated_cudaSiftH.cu.o.cmake
 
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: ../cudaImage.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: ../cudaSift.h
@@ -752,128 +752,154 @@ CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/lib/gcc/x86_64-li
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/builtin_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/channel_descriptor.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/common_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/common_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/device_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/host_config.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/host_defines.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/math_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/cuda_runtime.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/device_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/device_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/driver_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/driver_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/host_config.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/host_defines.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/library_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/surface_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/surface_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/texture_types.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/vector_functions.h
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/vector_functions.hpp
-CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda/include/vector_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/builtin_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/channel_descriptor.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/common_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/common_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/device_double_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/device_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/host_config.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/host_defines.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/math_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/crt/sm_70_rt.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/cuda_device_runtime_api.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/cuda_runtime.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/cuda_runtime_api.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/cuda_surface_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/cuda_texture_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/device_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/device_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/device_launch_parameters.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/device_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/driver_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/driver_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/host_config.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/host_defines.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/library_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_20_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_20_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_30_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_32_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_32_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_35_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_35_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_60_atomic_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/sm_61_intrinsics.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/surface_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/surface_indirect_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/surface_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/texture_fetch_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/texture_indirect_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/texture_types.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/vector_functions.h
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/vector_functions.hpp
+CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: /usr/local/cuda-9.0/include/vector_types.h
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o.cmake
 CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o: ../matching.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pan/Github/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building NVCC (Device) object CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o"
-	cd /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -E make_directory /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//.
-	cd /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_matching.cu.o -D generated_cubin_file:STRING=/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_matching.cu.o.cubin.txt -P /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir//sift_gpu_generated_matching.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building NVCC (Device) object CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o"
+	cd /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -E make_directory /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//.
+	cd /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_matching.cu.o -D generated_cubin_file:STRING=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//./sift_gpu_generated_matching.cu.o.cubin.txt -P /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir//sift_gpu_generated_matching.cu.o.cmake
+
+CMakeFiles/sift_gpu.dir/sift_interface.cpp.o: CMakeFiles/sift_gpu.dir/flags.make
+CMakeFiles/sift_gpu.dir/sift_interface.cpp.o: ../sift_interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sift_gpu.dir/sift_interface.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sift_gpu.dir/sift_interface.cpp.o -c /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/sift_interface.cpp
+
+CMakeFiles/sift_gpu.dir/sift_interface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sift_gpu.dir/sift_interface.cpp.i"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/sift_interface.cpp > CMakeFiles/sift_gpu.dir/sift_interface.cpp.i
+
+CMakeFiles/sift_gpu.dir/sift_interface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sift_gpu.dir/sift_interface.cpp.s"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/sift_interface.cpp -o CMakeFiles/sift_gpu.dir/sift_interface.cpp.s
+
+CMakeFiles/sift_gpu.dir/sift_interface.cpp.o.requires:
+
+.PHONY : CMakeFiles/sift_gpu.dir/sift_interface.cpp.o.requires
+
+CMakeFiles/sift_gpu.dir/sift_interface.cpp.o.provides: CMakeFiles/sift_gpu.dir/sift_interface.cpp.o.requires
+	$(MAKE) -f CMakeFiles/sift_gpu.dir/build.make CMakeFiles/sift_gpu.dir/sift_interface.cpp.o.provides.build
+.PHONY : CMakeFiles/sift_gpu.dir/sift_interface.cpp.o.provides
+
+CMakeFiles/sift_gpu.dir/sift_interface.cpp.o.provides.build: CMakeFiles/sift_gpu.dir/sift_interface.cpp.o
+
 
 # Object files for target sift_gpu
-sift_gpu_OBJECTS =
+sift_gpu_OBJECTS = \
+"CMakeFiles/sift_gpu.dir/sift_interface.cpp.o"
 
 # External object files for target sift_gpu
 sift_gpu_EXTERNAL_OBJECTS = \
-"/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o" \
-"/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o" \
-"/home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o"
+"/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o" \
+"/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o" \
+"/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o"
 
+../lib/libsift_gpu.so: CMakeFiles/sift_gpu.dir/sift_interface.cpp.o
 ../lib/libsift_gpu.so: CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o
 ../lib/libsift_gpu.so: CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o
 ../lib/libsift_gpu.so: CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o
 ../lib/libsift_gpu.so: CMakeFiles/sift_gpu.dir/build.make
-../lib/libsift_gpu.so: /usr/local/cuda/lib64/libcudart_static.a
+../lib/libsift_gpu.so: /usr/local/cuda-9.0/lib64/libcudart_static.a
 ../lib/libsift_gpu.so: /usr/lib/x86_64-linux-gnu/librt.so
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_stitching3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_superres3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_videostab3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_aruco3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_bgsegm3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_bioinspired3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_ccalib3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_cvv3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_dpm3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_face3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_fuzzy3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_hdf3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_img_hash3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_line_descriptor3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_optflow3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_reg3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_rgbd3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_saliency3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_stereo3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_structured_light3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_surface_matching3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_tracking3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_xfeatures2d3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_ximgproc3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_xobjdetect3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_xphoto3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_shape3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_photo3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_datasets3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_plot3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_text3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_dnn3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_ml3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_video3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_calib3d3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_features2d3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_highgui3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_videoio3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_viz3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_phase_unwrapping3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_flann3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_imgcodecs3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_objdetect3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_imgproc3.so.3.3.1
-../lib/libsift_gpu.so: /home/pan/.tspkg/lib/libopencv_core3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videostab3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_aruco3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bgsegm3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bioinspired3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ccalib3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_cvv3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dpm3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_face3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_fuzzy3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_hdf3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_img_hash3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_line_descriptor3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_optflow3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_reg3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_rgbd3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_saliency3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stereo3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_structured_light3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_surface_matching3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_tracking3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xfeatures2d3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ximgproc3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xobjdetect3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_plot3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_text3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dnn3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ml3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_video3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_calib3d3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_features2d3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videoio3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_objdetect3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+../lib/libsift_gpu.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 ../lib/libsift_gpu.so: CMakeFiles/sift_gpu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pan/Github/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../lib/libsift_gpu.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library ../lib/libsift_gpu.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sift_gpu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -881,7 +907,7 @@ CMakeFiles/sift_gpu.dir/build: ../lib/libsift_gpu.so
 
 .PHONY : CMakeFiles/sift_gpu.dir/build
 
-CMakeFiles/sift_gpu.dir/requires:
+CMakeFiles/sift_gpu.dir/requires: CMakeFiles/sift_gpu.dir/sift_interface.cpp.o.requires
 
 .PHONY : CMakeFiles/sift_gpu.dir/requires
 
@@ -892,6 +918,6 @@ CMakeFiles/sift_gpu.dir/clean:
 CMakeFiles/sift_gpu.dir/depend: CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaImage.cu.o
 CMakeFiles/sift_gpu.dir/depend: CMakeFiles/sift_gpu.dir/sift_gpu_generated_cudaSiftH.cu.o
 CMakeFiles/sift_gpu.dir/depend: CMakeFiles/sift_gpu.dir/sift_gpu_generated_matching.cu.o
-	cd /home/pan/Github/CudaSift/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pan/Github/CudaSift /home/pan/Github/CudaSift /home/pan/Github/CudaSift/build /home/pan/Github/CudaSift/build /home/pan/Github/CudaSift/build/CMakeFiles/sift_gpu.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/llpan/Github/visual_lidar_slam/third_party/CudaSift /home/llpan/Github/visual_lidar_slam/third_party/CudaSift /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/sift_gpu.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sift_gpu.dir/depend
 

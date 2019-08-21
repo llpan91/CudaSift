@@ -4,17 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pan/Github/CudaSift/geomFuncs.cpp" "/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir/geomFuncs.cpp.o"
-  "/home/pan/Github/CudaSift/mainSift.cpp" "/home/pan/Github/CudaSift/build/CMakeFiles/cudasift.dir/mainSift.cpp.o"
+  "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/geomFuncs.cpp" "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/cudasift.dir/geomFuncs.cpp.o"
+  "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/mainSift.cpp" "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/CMakeFiles/cudasift.dir/mainSift.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/eigen3"
   "../"
-  "/usr/local/cuda/include"
-  "/home/pan/.tspkg/include/opencv-3.3.1-dev"
-  "/home/pan/.tspkg/include/opencv-3.3.1-dev/opencv"
+  "/usr/local/cuda-9.0/include"
+  "/opt/ros/kinetic/include/opencv-3.3.1-dev"
+  "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
   )
 
 # Targets to which this target links.

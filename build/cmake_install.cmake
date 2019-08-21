@@ -1,4 +1,4 @@
-# Install script for directory: /home/pan/Github/CudaSift
+# Install script for directory: /home/llpan/Github/visual_lidar_slam/third_party/CudaSift
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pan/Github/CudaSift/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

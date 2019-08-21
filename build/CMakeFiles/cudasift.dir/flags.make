@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -march=native -O3 -O2 -msse2  -O3 -DNDEBUG
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pan/Github/CudaSift -I/usr/local/cuda/include -isystem /home/pan/.tspkg/include/opencv-3.3.1-dev -isystem /home/pan/.tspkg/include/opencv-3.3.1-dev/opencv 
+CXX_INCLUDES = -I/usr/include/eigen3 -I/home/llpan/Github/visual_lidar_slam/third_party/CudaSift -I/usr/local/cuda-9.0/include -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev -isystem /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv 
 

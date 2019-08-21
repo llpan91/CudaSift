@@ -12,6 +12,8 @@ set( LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib )
 set(CPACK_GENERATOR "ZIP")
 include(CPack)
 
+include_directories( "/usr/include/eigen3/")
+
 find_package(OpenCV REQUIRED)
 find_package(CUDA)
 if (NOT CUDA_FOUND)
@@ -43,6 +45,7 @@ cuda_add_library( sift_gpu SHARED
 		  cudaImage.cu  
 		  cudaSiftH.cu 
 		  matching.cu 
+		  sift_interface.cpp
 		  )
 		  
 target_link_libraries (sift_gpu 

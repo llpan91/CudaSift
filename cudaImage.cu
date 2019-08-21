@@ -39,6 +39,22 @@ CudaImage::CudaImage() :
 
 }
 
+void CudaImage::setParam(int _width, int _height, int _pitch, bool _withHost, float *devMem){
+  
+  width = _width;
+  height = _height;
+  d_data = devMem;
+  h_data = NULL;
+  t_data = NULL; 
+  if (d_data == NULL) {
+    safeCall(cudaMallocPitch((void **)&d_data, (size_t*)&pitch, (size_t)(sizeof(float)*width), (size_t)height));
+    pitch /= sizeof(float);
+    if (d_data==NULL) 
+      printf("Failed to allocate device data\n");
+    d_internalAlloc = true;
+  }
+  
+}
 
 CudaImage::CudaImage(int _width, int _height, int _pitch, bool _withHost, float *devMem):
   width(_width), height(_height), d_data(devMem), h_data(NULL), t_data(NULL) {
@@ -70,16 +86,13 @@ CudaImage::~CudaImage(){
  h_data = hostmem;
 }
  
-double CudaImage::Download()  
-{
+double CudaImage::Download(){
   TimerGPU timer(0);
   int p = sizeof(float)*pitch;
   if (d_data!=NULL && h_data!=NULL) 
     safeCall(cudaMemcpy2D(d_data, p, h_data, sizeof(float)*width, sizeof(float)*width, height, cudaMemcpyHostToDevice));
   double gpuTime = timer.read();
-#ifdef VERBOSE
-  printf("Download time =               %.2f ms\n", gpuTime);
-#endif
+
   return gpuTime;
 }
 
