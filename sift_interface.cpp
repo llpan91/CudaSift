@@ -7,6 +7,8 @@
 #include <opencv2/calib3d/calib3d.hpp>
 #include <opencv2/core/eigen.hpp>
 
+#include "tic_toc.h"
+
 SiftInterface::SiftInterface(cv::Mat k_mat, unsigned int width, unsigned int height,
                              int num_octaves, float init_bulr, float thresh, float min_scale, 
 			     bool up_scale) {
@@ -22,6 +24,11 @@ SiftInterface::SiftInterface(cv::Mat k_mat, unsigned int width, unsigned int hei
   
   InitCuda(0);
   img_model_.setParam(width_, height_, iAlignUp(width_, 128), false, NULL);
+  
+  sub_width_ = static_cast<unsigned int>(0.1 * width);
+  sub_height_ = static_cast<unsigned int>(0.1 * height);
+  
+  sub_img_model_.setParam(sub_width_, sub_height_, iAlignUp(sub_width_, 128), false, NULL);
 }
 
 void SiftInterface::extractFeature(cv::Mat &img, SiftData &sift_data) {
@@ -37,8 +44,34 @@ void SiftInterface::extractFeature(cv::Mat &img, SiftData &sift_data) {
   FreeSiftTempMemory(memoryTmp);
 }
 
-void SiftInterface::uniformFeature(SiftData& sift_data){
-  
+void SiftInterface::extractMoreFeature(cv::Mat &img, SiftData &sift_data) {
+  cv::Mat img_tmp;
+  img.convertTo(img_tmp, CV_32FC1);
+
+  img_model_.setImageIntiGPU((float *)img_tmp.data);
+  img_model_.Download();
+  InitSiftData(sift_data, 32768, true, true);
+  float *memoryTmp = AllocSiftTempMemory(width_, height_, 5, false);
+  ExtractSift(sift_data, img_model_, num_octaves_, init_blur_, 1.0, min_scale_, up_scale_, 
+	      memoryTmp);
+  FreeSiftTempMemory(memoryTmp);
+}
+
+void SiftInterface::extractSubImg(cv::Mat &img, SiftData &sift_data) {
+  cv::Mat img_tmp;
+  img.convertTo(img_tmp, CV_32FC1);
+  sub_img_model_.setImageIntiGPU((float *)img_tmp.data);
+  sub_img_model_.Download();
+  //  InitSiftData(sift_data, 32768, true, true);
+  InitSiftData(sift_data);
+  float *memoryTmp = AllocSiftTempMemory(sub_width_, sub_height_, 5, false);
+  ExtractSift(sift_data, sub_img_model_, num_octaves_, init_blur_, thresh_, min_scale_, up_scale_, 
+	      memoryTmp);
+  FreeSiftTempMemory(memoryTmp);
+}
+
+void SiftInterface::uniformFeature(cv::Mat &img, SiftData& sift_data){
+  extractFeature(img, sift_data);
   mask_ = cv::Mat(height_, width_, CV_8UC1, cv::Scalar(255));
   int data_size = sift_data.numPts;
   
@@ -60,6 +93,100 @@ void SiftInterface::uniformFeature(SiftData& sift_data){
   sift_data.numPts = count;
   std::cout << "before uniform data size = " << data_size << std::endl;
   std::cout << "after uniform data size = " << count << std::endl;
+}
+
+void SiftInterface::twoStageUniformFeature(cv::Mat& img, SiftData& sift_data){
+  
+  extractFeature(img, sift_data);
+  mask_ = cv::Mat(height_, width_, CV_8UC1, cv::Scalar(255));
+  int data_size = sift_data.numPts;
+  
+#ifdef MANAGEDMEM
+  SiftPoint *sift1 = sift_data.m_data;
+#else
+  SiftPoint *sift1 = sift_data.h_data;
+#endif
+  int count = 0;
+  for (int i = 0; i < data_size; i++) {
+    cv::Point2f pt(sift1[i].xpos, sift1[i].ypos);
+    if (mask_.at<uchar>(pt) == 255){
+      cv::circle(mask_, pt, MIN_DIST_, 0, -1);
+      sift1[count] = sift1[i];
+      count++;
+    }
+  }
+  sift_data.numPts = count;
+  std::cout << "before uniform data size = " << data_size << std::endl;
+  std::cout << "after uniform_stage1 data size = " << count << std::endl;
+  
+  SiftData sift_data2;
+  extractMoreFeature(img, sift_data2);
+
+#ifdef MANAGEDMEM
+  SiftPoint *sift_point2 = sift_data2.m_data;
+#else
+  SiftPoint *sift_point2 = sift_data2.h_data;
+#endif
+  int data_size2 = sift_data2.numPts;
+  for (int i = 0; i < data_size2; i++) {
+    cv::Point2f pt(sift_point2[i].xpos, sift_point2[i].ypos);
+    if (mask_.at<uchar>(pt) == 255){
+      cv::circle(mask_, pt, MIN_DIST_, 0, -1);
+      sift1[count] = sift_point2[i];
+      count++;
+    }
+  }
+  cv::imwrite("mask.png", mask_);  
+  std::cout << "after uniform_stage2 data size = " << count << std::endl;
+}
+
+void SiftInterface::extractFeatureBucket(const cv::Mat& image, SiftData& sift_data) {
+
+  const int x_subregion_num = (image.cols - 10) / sub_width_;
+  const int y_subregion_num = (image.rows - 10) / sub_height_;
+
+  #ifdef MANAGEDMEM
+  SiftPoint *sift_point = sift_data.m_data;
+  #else
+  SiftPoint *sift_point = sift_data.h_data;
+  #endif
+  int start_index = 0;
+  /*  
+  std::cout << "sub_width_ = " << sub_width_ << std::endl;
+  std::cout << "sub_height_ = " << sub_height_ << std::endl;
+  std::cout << "x_subregion_num_ = " << x_subregion_num << std::endl;
+  std::cout << "y_subregion_num_ = " << y_subregion_num << std::endl;  
+  */
+  for (int i = 0; i < y_subregion_num; i++) {
+    for (int j = 0; j < x_subregion_num; j++) {
+
+      int subregion_left = (int)(sub_width_ * j);
+      int subregion_top = (int)(sub_height_ * i);
+      cv::Mat sub_img = image(cv::Rect(subregion_left, subregion_top, (int)sub_width_, (int)sub_height_));
+      std::string img_name = std::to_string(i) + std::to_string(j) + ".png";
+
+      SiftData tmp_sift_data;
+      extractSubImg(sub_img, tmp_sift_data);
+      
+      #ifdef MANAGEDMEM
+      SiftPoint *sift_point_sub = tmp_sift_data.m_data;
+      #else
+      SiftPoint *sift_point_sub = tmp_sift_data.h_data;
+      #endif
+
+      int max_keep_num = min(max_feature_num_per_subregion_, tmp_sift_data.numPts);
+      for(int index = 0; index < max_keep_num; index++){
+	sift_point_sub[index].xpos = sift_point_sub[index].xpos + subregion_left;
+	sift_point_sub[index].ypos = sift_point_sub[index].ypos + subregion_top;
+	sift_point[start_index] = sift_point_sub[index];
+	start_index++;
+      }
+      FreeSiftData(tmp_sift_data);
+    }
+  }
+  sift_data.numPts = start_index;
+  std::cout << "Total feature size = " << start_index << std::endl;
+  return;
 }
 
 std::vector<cv::KeyPoint> SiftInterface::getKeyPoints(SiftData &sift_data) {
@@ -109,6 +236,7 @@ Matches SiftInterface::rejectWithF(const Matches &matches){
     if(error > 1.0) continue;
     matches_inlier.push_back(matches[i]);
   }
+  std::cout << "matches size by rejectWithF = " << matches.size() << std::endl;
  return matches_inlier; 
 }
 
@@ -168,7 +296,6 @@ Matches SiftInterface::matchDoubleCheck(SiftData &sift_data1, SiftData &sift_dat
     cv::Point2f pre_pt(sift1[i].xpos, sift1[i].ypos);
     cv::Point2f cur_pt(sift1[i].match_xpos, sift1[i].match_ypos);
     
-        
     std::pair<cv::Point2f, cv::Point2f> tmp = std::make_pair(pre_pt, cur_pt);
     matches.push_back(tmp);
   }

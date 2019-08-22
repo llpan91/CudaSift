@@ -30,7 +30,15 @@ class SiftInterface {
 
   void extractFeature(cv::Mat& img, SiftData& sift_data);
 
-  void uniformFeature(SiftData& sift_data);
+  void extractMoreFeature(cv::Mat &img, SiftData &sift_data);
+  
+  void extractSubImg(cv::Mat &img, SiftData &sift_data);
+  
+  void uniformFeature(cv::Mat &img , SiftData& sift_data);
+  
+  void twoStageUniformFeature(cv::Mat& img, SiftData& sift_data);
+  
+  void extractFeatureBucket(const cv::Mat& image, SiftData& sift_data);
   
   std::vector<cv::KeyPoint> getKeyPoints(SiftData& sift_data);
 
@@ -44,24 +52,29 @@ class SiftInterface {
   
   Matches matchDoubleCheck(SiftData &sift_data1, SiftData &sift_data2);
   
-  
  private:
   cv::Mat k_mat_;
 
   cv::Mat mask_;
   
-  int MIN_DIST_ = 20;
+  int MIN_DIST_ = 10;
+  
   // just initial once
   CudaImage img_model_;
   // SiftData sift_data1_, sift_data2_;
   unsigned int width_, height_;
+  
+  CudaImage sub_img_model_;
+  unsigned int sub_width_, sub_height_;
+
 
   int num_octaves_ = 3;    /* Number of octaves in Gaussian pyramid */
   float init_blur_ = 1.0f; /* Amount of initial Gaussian blurring in standard deviations */
-  float thresh_ = 3.5f;	   /* Threshold on difference of Gaussians for feature pruning */
+  float thresh_ = 2.0f;	   /* Threshold on difference of Gaussians for feature pruning */
   float min_scale_ = 0.0f; /* Minimum acceptable scale to remove fine-scale features */
   bool up_scale_ = false;  /* Whether to upscale image before extraction */
   
+  // for feature extract by bucket
+  int max_feature_num_per_subregion_ = 20;
 
-  //   std::vectro<cv::KeyPoint> key_points_;
 };

@@ -21,6 +21,8 @@ opencv2/calib3d/calib3d.hpp
 -
 opencv2/core/eigen.hpp
 -
+tic_toc.h
+/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/tic_toc.h
 
 /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/sift_interface.h
 iostream
@@ -37,6 +39,14 @@ cudaImage.h
 /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/cudaImage.h
 cudaSift.h
 /home/llpan/Github/visual_lidar_slam/third_party/CudaSift/cudaSift.h
+
+/home/llpan/Github/visual_lidar_slam/third_party/CudaSift/tic_toc.h
+chrono
+-
+cstdlib
+-
+ctime
+-
 
 /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cxcore.h
 opencv2/core/core_c.h
