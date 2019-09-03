@@ -24,7 +24,7 @@ typedef std::vector<std::pair<cv::Point2f, cv::Point2f> > Matches;
 
 class SiftInterface {
  public:
-  SiftInterface(cv::Mat k_mat, unsigned int width, unsigned int height, int num_octaves = 3, 
+  SiftInterface(cv::Mat k_mat, unsigned int width, unsigned int height, int num_octaves = 3,
 		float init_bulr = 1.0, float thresh = 3.5, float min_scale = 0.0, 
 		bool up_scale = false);
 
